@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D330F72A24D49400E8ADEB /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D330F62A24D49400E8ADEB /* WeekView.swift */; };
 		CDE5E4B82704B14000D8F696 /* CustomDatePickerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5E4B72704B14000D8F696 /* CustomDatePickerDemoApp.swift */; };
 		CDE5E4BA2704B14000D8F696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5E4B92704B14000D8F696 /* ContentView.swift */; };
 		CDE5E4BC2704B14200D8F696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE5E4BB2704B14200D8F696 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65D330F62A24D49400E8ADEB /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		CDE5E4B42704B14000D8F696 /* CustomDatePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomDatePickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE5E4B72704B14000D8F696 /* CustomDatePickerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerDemoApp.swift; sourceTree = "<group>"; };
 		CDE5E4B92704B14000D8F696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65D330F32A24815700E8ADEB /* WeekViewDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				65D330F62A24D49400E8ADEB /* WeekView.swift */,
+			);
+			path = WeekViewDatePicker;
+			sourceTree = "<group>";
+		};
 		CDE5E4AB2704B14000D8F696 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		CDE5E4B62704B14000D8F696 /* CustomDatePickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				65D330F32A24815700E8ADEB /* WeekViewDatePicker */,
 				CDE5E4D02705512200D8F696 /* CustomDatePickerDemo.entitlements */,
 				CDE5E4C62704B55500D8F696 /* Model */,
 				CDE5E4C52704B54C00D8F696 /* View */,
@@ -170,6 +181,7 @@
 				CDE5E4CA2704B68400D8F696 /* CustomDatePicker.swift in Sources */,
 				CDE5E4BA2704B14000D8F696 /* ContentView.swift in Sources */,
 				CDE5E4C82704B57F00D8F696 /* Home.swift in Sources */,
+				65D330F72A24D49400E8ADEB /* WeekView.swift in Sources */,
 				CDE5E4CC2704BB5100D8F696 /* DateValue.swift in Sources */,
 				CDE5E4CE27051F9F00D8F696 /* Task.swift in Sources */,
 				CDE5E4B82704B14000D8F696 /* CustomDatePickerDemoApp.swift in Sources */,

@@ -91,13 +91,10 @@ struct CustomDatePicker: View {
                 if let task = tasks.first(where: { task in
                     return isSameDay(date1: task.taskDate, date2: currentDate)
                 }) {
-                    
                     ForEach(task.task) { task in
-                        
                         // For custom timing
                         VStack(alignment: .leading, spacing: 10) {
                             Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)), style: .time)
-                            
                             Text(task.title)
                                 .font(.title2.bold())
                         }
@@ -109,18 +106,13 @@ struct CustomDatePicker: View {
                                 .opacity(0.5)
                                 .cornerRadius(10)
                                 .frame(maxWidth: .infinity)
-
                         )
-                        
                     }
-                     
-                }else {
+                } else {
                     Text("No Task Found")
                 }
             }
             .padding()
-
-            
         }
         .onChange(of: currentMonth) { newValue in
             // update month
@@ -130,15 +122,11 @@ struct CustomDatePicker: View {
     
     @ViewBuilder
     func CardView(value: DateValue) -> some View {
-        
         VStack {
-            
             if value.day != -1 {
-                
                 if let task = tasks.first(where: { task in
                     return isSameDay(date1: task.taskDate, date2: value.date)
                 }) {
-
                     Text("\(value.day)")
                         .font(.title3.bold())
                         .foregroundColor(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .primary)
@@ -150,7 +138,7 @@ struct CustomDatePicker: View {
                         .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : Color("Pink") )
                         .frame(width: 8, height: 8)
 
-                }else {
+                } else {
                     Text("\(value.day)")
                         .font(.title3.bold())
                         .foregroundColor(isSameDay(date1: value.date , date2: currentDate) ? .white : .primary)
@@ -158,27 +146,21 @@ struct CustomDatePicker: View {
 
                     Spacer()
                 }
-
-                
             }
         }
         .padding(.vertical, 9)
         .frame(height: 60, alignment: .top)
-            
     }
     // Checking dates
     func isSameDay(date1: Date, date2: Date) -> Bool {
-        
         return Calendar.current.isDate(date1, inSameDayAs: date2)
-        
     }
-    
     
     // Extraing year and month for display
     func extraDate() -> [String] {
         let formatter = DateFormatter()
         formatter.dateFormat = "YYYY MMMM"
-        
+            
         let date = formatter.string(from: currentDate)
          
         return date.components(separatedBy: " ")
@@ -228,9 +210,7 @@ struct CustomDatePicker_Previews: PreviewProvider {
 }
 
 extension Date {
-    
     func getAllDates() -> [Date] {
-        
         let calendar = Calendar.current
         
         // geting start date
@@ -238,13 +218,9 @@ extension Date {
         
         let range = calendar.range(of: .day, in: .month, for: startDate)
         
-        
         // getting date...
         return range!.compactMap{ day -> Date in
             return calendar.date(byAdding: .day, value: day - 1 , to: startDate)!
         }
-        
     }
-    
-    
 }
