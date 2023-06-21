@@ -18,6 +18,8 @@
 		CDE5E4CE27051F9F00D8F696 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5E4CD27051F9F00D8F696 /* Task.swift */; };
 		EA0BA7502A42E5F800F39FB1 /* MonthlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BA74F2A42E5F800F39FB1 /* MonthlyView.swift */; };
 		EA0BA7532A432E6600F39FB1 /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BA7522A432E6600F39FB1 /* Date+extension.swift */; };
+		EA0BA7552A432F1700F39FB1 /* 3MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BA7542A432F1700F39FB1 /* 3MonthView.swift */; };
+		EA0BA7572A43310A00F39FB1 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BA7562A43310A00F39FB1 /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		CDE5E4D02705512200D8F696 /* CustomDatePickerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomDatePickerDemo.entitlements; sourceTree = "<group>"; };
 		EA0BA74F2A42E5F800F39FB1 /* MonthlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyView.swift; sourceTree = "<group>"; };
 		EA0BA7522A432E6600F39FB1 /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
+		EA0BA7542A432F1700F39FB1 /* 3MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3MonthView.swift; sourceTree = "<group>"; };
+		EA0BA7562A43310A00F39FB1 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EA0BA74F2A42E5F800F39FB1 /* MonthlyView.swift */,
+				EA0BA7542A432F1700F39FB1 /* 3MonthView.swift */,
 			);
 			path = 3MonthDatePicker;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				EA0BA7522A432E6600F39FB1 /* Date+extension.swift */,
+				EA0BA7562A43310A00F39FB1 /* HelperFunctions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE5E4CA2704B68400D8F696 /* CustomDatePicker.swift in Sources */,
+				EA0BA7552A432F1700F39FB1 /* 3MonthView.swift in Sources */,
 				EA0BA7532A432E6600F39FB1 /* Date+extension.swift in Sources */,
 				EA0BA7502A42E5F800F39FB1 /* MonthlyView.swift in Sources */,
 				CDE5E4BA2704B14000D8F696 /* ContentView.swift in Sources */,
@@ -208,6 +215,7 @@
 				65D330F72A24D49400E8ADEB /* WeekView.swift in Sources */,
 				CDE5E4CC2704BB5100D8F696 /* DateValue.swift in Sources */,
 				CDE5E4CE27051F9F00D8F696 /* Task.swift in Sources */,
+				EA0BA7572A43310A00F39FB1 /* HelperFunctions.swift in Sources */,
 				CDE5E4B82704B14000D8F696 /* CustomDatePickerDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

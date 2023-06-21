@@ -23,7 +23,7 @@ struct MonthlyView: View {
                 }
             }
             LazyVGrid(columns: columns, spacing: 15) {
-                ForEach(extractDate()) { value in
+                ForEach(extractDateMonth(currentMonth)) { value in
                     if value.day != -1 {
                         CardView(value: value)
                             .background(
@@ -84,42 +84,6 @@ struct MonthlyView: View {
         }
         .padding(.vertical, 9)
         .frame(height: 60, alignment: .top)
-    }
-    
-    func isSameDay(date1: Date, date2: Date) -> Bool {
-        return Calendar.current.isDate(date1, inSameDayAs: date2)
-    }
-    
-    func extractDate() -> [DateValue] {
-        let calendar = Calendar.current
-        // Getting Current month date
-        let currentMonth = getCurrentMonth()
-        
-        var days = currentMonth.getAllDatesInAMonth().compactMap { date -> DateValue in
-            let day = calendar.component(.day, from: date)
-            let dateValue =  DateValue(day: day, date: date)
-            return dateValue
-        }
-        
-        // adding offset days to get exact week day...
-        let firstWeekday = calendar.component(.weekday, from: days.first?.date ?? Date())
-        
-        for _ in 0..<firstWeekday - 1 {
-            days.insert(DateValue(day: -1, date: Date()), at: 0)
-        }
-        
-        return days
-    }
-    
-    func getCurrentMonth() -> Date {
-        let calendar = Calendar.current
-        
-        // Getting Current month date
-        guard let currentMonth = calendar.date(byAdding: .month, value: self.currentMonth, to: Date()) else {
-            return Date()
-        }
-        
-        return currentMonth
     }
 }
 
