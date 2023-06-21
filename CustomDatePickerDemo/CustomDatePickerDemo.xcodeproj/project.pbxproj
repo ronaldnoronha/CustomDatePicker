@@ -16,6 +16,8 @@
 		CDE5E4CA2704B68400D8F696 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5E4C92704B68300D8F696 /* CustomDatePicker.swift */; };
 		CDE5E4CC2704BB5100D8F696 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5E4CB2704BB5100D8F696 /* DateValue.swift */; };
 		CDE5E4CE27051F9F00D8F696 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE5E4CD27051F9F00D8F696 /* Task.swift */; };
+		EA0BA7502A42E5F800F39FB1 /* MonthlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BA74F2A42E5F800F39FB1 /* MonthlyView.swift */; };
+		EA0BA7532A432E6600F39FB1 /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BA7522A432E6600F39FB1 /* Date+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CDE5E4CB2704BB5100D8F696 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		CDE5E4CD27051F9F00D8F696 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CDE5E4D02705512200D8F696 /* CustomDatePickerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomDatePickerDemo.entitlements; sourceTree = "<group>"; };
+		EA0BA74F2A42E5F800F39FB1 /* MonthlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyView.swift; sourceTree = "<group>"; };
+		EA0BA7522A432E6600F39FB1 /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		CDE5E4B62704B14000D8F696 /* CustomDatePickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EA0BA7512A432E5200F39FB1 /* Utils */,
+				EA0BA74E2A42B36600F39FB1 /* 3MonthDatePicker */,
 				65D330F32A24815700E8ADEB /* WeekViewDatePicker */,
 				CDE5E4D02705512200D8F696 /* CustomDatePickerDemo.entitlements */,
 				CDE5E4C62704B55500D8F696 /* Model */,
@@ -106,6 +112,22 @@
 				CDE5E4CD27051F9F00D8F696 /* Task.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EA0BA74E2A42B36600F39FB1 /* 3MonthDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EA0BA74F2A42E5F800F39FB1 /* MonthlyView.swift */,
+			);
+			path = 3MonthDatePicker;
+			sourceTree = "<group>";
+		};
+		EA0BA7512A432E5200F39FB1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA0BA7522A432E6600F39FB1 /* Date+extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE5E4CA2704B68400D8F696 /* CustomDatePicker.swift in Sources */,
+				EA0BA7532A432E6600F39FB1 /* Date+extension.swift in Sources */,
+				EA0BA7502A42E5F800F39FB1 /* MonthlyView.swift in Sources */,
 				CDE5E4BA2704B14000D8F696 /* ContentView.swift in Sources */,
 				CDE5E4C82704B57F00D8F696 /* Home.swift in Sources */,
 				65D330F72A24D49400E8ADEB /* WeekView.swift in Sources */,
